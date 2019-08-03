@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style><!-- td {border solid 1px black}></style>
+    </head>
+    <body>
+        <tr>
+            <th><label for = "id_keyword">キーワード：</label></th>
+            <td><input id = "id_keyword" type = "text" name = "keyword" maxlength = "100"></td>
+        </tr>
+        <tr>
+            <th><label for = "id_include_finished">解決したTODOも含める：</label></th>
+            <td><input id = "id_include_finished" type = "checkbox" name = "inchlude_finished" ></td>
+        </tr>
+        <tr>
+            <th><label for = "id_category">カテゴリ：</label></th>
+            <td><select id = "id_category" name = "category">
+                <option value = "" selected = "selected">------</option>
+                <option value = "1">private</option>
+                <option value = "2">hack</option>
+                <option value = "3">management</option>
+                </select>
+            </td>
+        </tr>
+    </body>
+</html>
