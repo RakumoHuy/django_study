@@ -18,7 +18,7 @@ from django.urls import path
 from secondproject.hello import helloworld
 from secondproject.urlsum import url_sum
 from secondproject.use_template import add_template
-from todo.views import show_categorized_list
+from todo.views import show_categorized_list, search_todo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +26,5 @@ urlpatterns = [
     path('sum/<str:a>/<str:b>/', url_sum),
     path('templates/', add_template),
     path('todo/', show_categorized_list),
+    path('todo/search/', search_todo),
 ]
