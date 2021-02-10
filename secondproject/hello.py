@@ -11,6 +11,6 @@ from django.http import HttpResponse,Http404
 
 
 def helloworld(request):
-    message = "<html><body>Hello world</body></html>"
+    message = "<html><body>Hello world kenshu Tsunezawa san</body></html>"
     from time import ctime
     return HttpResponse(ctime() + message, content_type='text/plain')
